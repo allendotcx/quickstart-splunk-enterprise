@@ -357,7 +357,7 @@ Mappings:
     eu-west-1:
       SPLUNKENTHVM: ami-0fafe9e81915f154e
     eu-west-2:
-      SPLUNKENTHVM: ami-060d9e50d310e0ebb
+      SPLUNKENTHVM: ami-0b285d7712449bb17
     sa-east-1:
       SPLUNKENTHVM: ami-0dacd4005280936e5
     us-east-1:
