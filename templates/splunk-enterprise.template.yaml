@@ -193,7 +193,7 @@ Parameters:
     Description: S3 bucket name for the Quick Start assets.
     Type: String
   QSS3BucketRegion:
-    Default: 'us-east-1'
+    Default: 'eu-west-2'
     Description: 'The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.'
     Type: String
   QSS3KeyPrefix:
@@ -338,36 +338,8 @@ Conditions:
   UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
 Mappings:
   AWSAMIRegionMap:
-    AMI:
-      SPLUNKENTHVM: splunk_marketplace_AMI_2018-10-16_22_07_36-7b65de6c-5006-4ca2-bd75-fdba95ae5d9d-ami-0d494b5a999e1c49f.4
-    ap-northeast-1:
-      SPLUNKENTHVM: ami-0db36f11d65f551fb
-    ap-northeast-2:
-      SPLUNKENTHVM: ami-09c7965888207979b
-    ap-south-1:
-      SPLUNKENTHVM: ami-07c20db6edfd45f98
-    ap-southeast-1:
-      SPLUNKENTHVM: ami-0e7b7ca1bdcdd93a6
-    ap-southeast-2:
-      SPLUNKENTHVM: ami-0c8a4d5bdf83f0df8
-    ca-central-1:
-      SPLUNKENTHVM: ami-02f085f4514fa7145
-    eu-central-1:
-      SPLUNKENTHVM: ami-09ce965c3b1a9a1cb
-    eu-west-1:
-      SPLUNKENTHVM: ami-0fafe9e81915f154e
     eu-west-2:
       SPLUNKENTHVM: ami-0b285d7712449bb17
-    sa-east-1:
-      SPLUNKENTHVM: ami-0dacd4005280936e5
-    us-east-1:
-      SPLUNKENTHVM: ami-0484972f36720ea7f
-    us-east-2:
-      SPLUNKENTHVM: ami-04b6874c649721f0a
-    us-west-1:
-      SPLUNKENTHVM: ami-0377011a3f771e353
-    us-west-2:
-      SPLUNKENTHVM: ami-0c3e33232b6c07537
   SplunkConfig:
     dedicated-instance-type:
       clusterMaster: c5.xlarge
